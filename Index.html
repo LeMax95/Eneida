@@ -9,11 +9,11 @@
 <body>
   <h1> Main Page </h1> 
   <a title = "Quickie" target = "_blank" href ="https://rt.pornhub.com/view_video.php?viewkey=ph6261b30ebf98a ">  
-  <img src = "https://i.ibb.co/kVT9p0W/Hippie.jpg" alt="Hippie" border="0"  width="500" height="500"></a>  
+  <img src = "Assets\Images\Hippie.jpg" alt="Hippie" border="0"  width="500" height="500"></a>  
   <div style= "width: 50% ; float: right;">
     <video 
-     width = "500"
-     height = "500"
+     width = "350"
+     height = "250"
      poster = "Assets\Images\straus.jpg"
      controls 
      muted 
@@ -21,11 +21,21 @@
      <source src = "Assets\Video\videomp4_BV.mp4" type = "video/mp4"  />
      <source src = "Assets\Video\videomhd_BV.webm" type = "video/webm" />  
      <source src = "Assets\Video\videogg_BV.ogv" type = "video/ogg" />  
+     <track kind = "subtitles" src = "Assets\Subtitles\videogg-BV.vtt" srclang="RU" label = "Russian" />
      <p>
       Video format not supported 
      </p>
+    </div>
+    <div style= "width: 50% ; float: right;">
      </video>
+     <audio 
+      controls
+      preload = "auto">
+      <source src = "Assets\Audio\audiogg.ogg" type = "audio/ogg"  />
+      <source src = "Assets\Audio\audiomp3.mp3" type = "audio/mp3"  />
+    </audio>
   </div>
+  
   <p> Obey sinner! </p>
 </body>
 </html>
