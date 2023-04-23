@@ -1,0 +1,24 @@
+.button{
+    background-color: #60D89A; 
+    color: black;
+    text-align: center;
+    text-justify: distribute-all-lines;
+    font-size: medium;
+    border-radius: 17px;
+    height:50px;
+    width:180px;}
+
+
+ .cvform{
+    background-color:#BAACBD;
+    color: black;
+    border-style: hidden;
+    border-color: #000;
+
+
+ }
+
+ .head{
+    border-style:solid;
+    border: color #000;
+ }

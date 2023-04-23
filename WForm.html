@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles\WForm.css">
+    
+    <title> RegForm</title>
+</head>
+<body>
+    <header>  <h1 align = "center" class = "cvform"> Submission Form </h1>   </header>
+
+       <section1 name = "Basic Info" id = "BInf"  align = "left" > 
+          <head> <h2 align = "center" class = "Step" > Step 1 </h2> </head>
+             <form autocomplete="on" target="_self" id="f1">
+              <fieldset id="fset1" >
+               <legend id="lbinf" class = "head"> Basic Info </legend>
+                <label for="Fname" id="lfname"> First name *  </label> 
+                <input type = "text" id="fname" name="fname" > <br> <br>
+                <label for="lname">Last name *</label> 
+                <input type="text" id="lname" name="lname"> <br> <br>
+                <label for ="age"> Age  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="data" id="age">  <br> <br>         
+                <label for ="job"> Position&nbsp;&nbsp;&nbsp;&nbsp;* </label>
+                <select id="job">
+                 <option value="utility cleaner">&nbspUtility cleaner</option>
+                 <option value="waitress">&nbspWaitress</option>
+                 <option value="janitor">&nbspJanitor</option>
+                 <option value="massaj">&nbspMasseur</option>
+                 <option value="prost">&nbspProstitute</option>
+                 <option value="pimp">&nbspPimp</option>
+                 <option value="bouncer">&nbspBouncer</option>
+                 <option value="null" selected > </option>
+              </select>
+             </fieldset>        
+            </form>
+          <button class="button button 1" id="bnext"  onclick= "removefunc()"> <b> Next </b> </button> 
+        </section1>
+
+   
+
+   <section2 name = "Job Experience" id = "Jexp" align = "left" hidden>
+             <head> <h2 align = "center" class = "Step" > Step 2 </h2> </head>
+    <form autocomplete="on" target="_self" id="f2">
+        <fieldset>
+            <legend class = "head"> Last Job </legend>
+             <label for ="ljob"> Position&nbsp;&nbsp;&nbsp;&nbsp;* </label>
+              <input type="text" id="lposition" name="lposition"> <br> <br>
+             <label for ="durat">Duration *&nbsp;&nbsp;</label>
+              <input type="data" id="durat">  <br> <br>
+             <label for="duties"> Main duties * </label> 
+               <textarea id="duties"> </textarea> <br> <br>   
+    
+           </fieldset>
+      
+    </form>
+    <button class="button button 1" onclick ="cinfo()"> <b> Next </b> </button>      
+   </section2>
+
+ <section3 name="Contact Info" id="Cinf" align = "left" hidden>   
+          <head> <h2 align = "center" class = "Step" > Step 3 </h2> </head>
+   <form autocomplete="on" id="f3">
+     <fieldset>   
+        <legend class = "head">   Contact Info   </legend>     
+          <label for="phone"> Phone </label> 
+           <input type = "text" id="phone" name="phone"> <br> <br>
+          <label for="email"> Email </label>
+           <input type ="email" id="email" name="email"> 
+    </form>
+
+     </fieldset>   
+
+     <button class="button button 1" type="submit" onclick ="finish()"> <b> Submit </b> </button>
+</section3>
+
+   <script>
+    function removefunc()
+    
+    {  
+        document.getElementById("Jexp").removeAttribute("hidden");
+        document.getElementById("BInf").setAttribute("hidden", 1);
+    }
+    
+
+
+
+     </script>
+     <script>
+        function cinfo()
+        
+        {      
+        
+            document.getElementById("Jexp").setAttribute("hidden", "");
+            document.getElementById("Cinf").removeAttribute("hidden");
+        }   
+    
+         </script>
+
+         <script> 
+            function finish() {
+               alert("We received your CV, will let you know about our decision today later on")
+              location.replace("Index.html")
+                                          }
+        </script>
+               
+
+
+             
+
+
+    
+</body>
+
+</html>
