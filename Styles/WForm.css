@@ -30,25 +30,9 @@
     
  }
 
- .Content1{
-   display:none;
-   width: 675px;
-   height: 225px;
-  padding-right: 25px;
-  border-style:solid;
-  border-color: #8FB339;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  background-color: #fff;
-  border-width: 1px;
-  margin-right: 50px;
-  margin-left: 365px;
-  margin-top: 125px;
- }
-
  .Content{
-   display:block;
+  
+  display: block;
    width: 675px;
    height: 225px;
   padding-right: 25px;
@@ -64,6 +48,75 @@
   margin-top: 125px;
   
  }
+#s2,#s3{
+  display: none;
+}
+
+#s2{
+  margin-left: 500px;
+  width: 475px;
+  height: 285px;
+  min-height: 155px;
+  
+}
+#f2{
+  padding-left: 1px;
+  padding-top: 15px;
+  
+}
+
+#f3{
+  padding-top: 15px;
+  padding-left: 1px;
+}
+
+#formm3{
+  margin-left: 1px;
+}
+
+#formm2{
+  margin-left: 1px;
+  padding-left: 105px;
+  padding-top: 10px;
+}
+
+#s3{
+
+  margin-left: 500px;
+  width: 475px;
+  height: 175px;
+  
+}
+
+#bnext3,#bnext2{
+  display: block;
+  margin-bottom: 200px;
+  margin-left: 490px;
+}
+
+#bnext3{
+  margin-top: 25px;
+}
+
+#txts2{
+  display: block;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  position: absolute;
+  top: 333px;
+  left: 630px;
+}
+#duties{
+
+  display: block;
+  width: 158px;
+  min-height: 63px;
+  max-width: 297px;
+  max-height: 100px;
+  margin-left: 87.8px;
+}
+
 
 
  .hut{
@@ -100,6 +153,7 @@ font-weight: bold;
 
  .bnext{
    margin-right: 125px;
+   
  }
  .form1{
    padding-left: 150px;
@@ -108,3 +162,17 @@ font-weight: bold;
    border-left-width: 45px;
 
  }
+
+ #bs3,#bs2{
+  width:140px;
+  height:35px;
+ }
+ #bs2{
+  position: absolute;
+  left: 870px;
+  bottom: 250px;
+ }
+ #tarea{
+  height: fit-content;
+ }
+

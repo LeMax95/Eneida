@@ -13,7 +13,7 @@
 
     <header>  <h1 align = "center" class = "cvform"> Submission Form </h1>   </header>   
                
-          <section1 class ="Content" id="s1">       
+          <section1 class ="Content" id="s1">
             <sectionBinf class = "hut" id="binf"> 
               <span class ="ico"> 1 </span>
               <span class="txt"> Basic Info </span>    </sectionBinf>   
@@ -25,7 +25,7 @@
                 <input type="text" id="lname" name="lname" value=""> <br> <br>
                 <label for ="age"> Age  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <input type="data" id="age" value="">  <br> <br>         
-                <label for ="job" value=""> Position&nbsp;&nbsp;&nbsp;&nbsp;* </label>
+                <label for ="job" value="">Position &nbsp;&nbsp;&nbsp;&nbsp;* </label>
                 <select id="job">
                  <option value="utility cleaner">&nbspUtility cleaner</option>
                  <option value="waitress">&nbspWaitress</option>
@@ -37,74 +37,76 @@
                  <option value="" selected > </option>
               </select>                      
             </form>  
-          <sectionbutt class="bnext"> 
-            <button class="button button 1" onclick="removefunc()"> <b> Next </b> </button>
+            </section>
+          <sectionbutt class="bnext" id="bnext1"> 
+            <button class="button button 1" onclick="removefunc('s1','s2')"> <b> Next </b> </button>
           </sectionbutt>            
-     </section1>     
-    
+        </section1>
+ 
 
-   <section2 id="s2" class="Content1">
-    <sectionJexp class = "hut" id="JexpHd"> 
+   <section2 class="Content" id="s2">
+    <sectionJexp class = "hut"> 
       <span class ="ico"> 2 </span>
       <span class="txt"> Job Experience </span>    </sectionJexp>   
       <section id="formm2" class="form1">       
        <form autocomplete="on" id="f2" >       
         <label for ="ljob"> Position&nbsp;&nbsp;&nbsp;&nbsp;* </label>
         <input type="text" id="lposition" name="lposition"> <br> <br>
-        <label for ="durat">Duration *&nbsp;&nbsp;</label>
+        <label for ="durat">Duration   &nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="data" id="durat">  <br> <br>
-        <label for="duties"> Main duties * </label> 
-        <textarea id="duties"> </textarea> <br> <br>       
-      </form>
-    <sectionbutt2 class="bnext"> 
-      <button class="button button 1" onclick ="cinfo()"> <b> Next </b> </button>     
+        <section id="tarea">
+        <label for="duties"> </label> 
+         <textarea id="duties" form="f2" cols="1" rows="1"></textarea> <br> <br> 
+            
+         </section>   
+         <span id="txts2"> Main&nbsp;Duties&nbsp;</span>
+       </form>
+      </section>
+    <sectionbutt2 class="bnext" id="bnext2"> 
+      <button class="button button 1" id="bs2" onclick ="removefunc('s2','s3')"> <b> Next </b> </button>     
     </sectionbutt2>   
    </section2>
 
 
 
- <section3 name="Contact Info" id="Cinf" align = "left" hidden>   
-   <form autocomplete="on" id="f3">
-    <fieldset class = "Content">   
-     <legend class = "head">   Contact Info   </legend>     
+ <section3 id="s3" class="Content">   
+  <sectionContact class = "hut"> 
+    <span class ="ico"> 3 </span>
+    <span class="txt"> Contact Info </span>    
+  </sectionContact> 
+    <section id="formm3" class="form1">    
+     <form autocomplete="on" id="f3">   
       <label for="phone"> Phone </label> 
       <input type = "text" id="phone" name="phone"> <br> <br>
-      <label for="email"> Email </label>
-      <input type ="email" id="email" name="email"> 
-    </fieldset>  
-   </form>    
-  <button class="button button 1" type="submit" onclick ="finish()"> <b> Submit </b> </button>
- </section3>
+      <label for="email">Email&nbsp;</label>
+      <input type ="email" id="email" name="email">     
+     </form>    
+  </section>
+  <section name="next3" id="bnext3" class="bnext">
+   <button class="button button 1" type="submit" id="bs3" onclick ="finish()"> <b> Submit </b> </button>
+ </section>
+</section3>
 
 
 
    <script>
 
-function removefunc()   
+function removefunc(id1,id2)   
 
-    {  
+    
+      {    
+        let k=document.getElementById(id1);
+        let j = document.getElementById(id2);
+        k.style.display = 'none';
+        j.style.display = 'block';
+        }   
+        
+       
+    
+        
       
-      document.getElementById("s2").style.display = 'block';
-      document.getElementById("s1").style.display = 'none';
-       
-       
-    }
 
   </script>
-
-
-    <script>
-
-        function cinfo()
-        
-        {             
-            document.getElementById("Jexp").setAttribute("hidden", "");
-            document.getElementById("Cinf").removeAttribute("hidden");
-        }   
-    
-     </script>
-
-
 
       <script> 
 
