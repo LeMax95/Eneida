@@ -146,25 +146,31 @@
 
 <footer>    
     <section class="submit-form"> 
+        
         <h2 class="submit-form__title" >Contact Us</h2>
-        <form class="submit-Form__form form" autocomplete="off">  
-            <label for="firstName"></label>
-            <div class="form__header"> Full Name </div>
-           <input autocomplete="off"  type="text" id="firstName" placeholder="Ram Kaji"> 
-          
+        <form class="submit-Form__form form" autocomplete="off"> 
+            <div class="form__header">
+             <h3 class="form__inputName">Full Name <span class="form__checkmark">✅</span> </h3>
+            <label for="firstName"></label>            
+           <input autocomplete="off"  type="text" id="firstName" name="fname" placeholder="Ram Kaji" required /> 
+        </div>
+        <div class="form__header">
            <label for="email"> </label>
-           <hr class="form__separator">
-           <div class="form__header"> Your Email Address </div>
-           <input autocomplete="off" type="email" id="email" placeholder="hello@lastdoor.store"> 
-           <hr class="form__separator">
-           <div class="form__header"> Your Message </div>
-           <textarea autocomplete="off" class="form__textarea" for="form" id="textArea" placeholder = "Type your message here...">   </textarea>
-            <label for="textArea"> </label>
-            <hr class="form__separator form__separator--txtarea">
+           <h3 class="form__inputName"> Your Email Address <span class="form__checkmark">✅</span> </h3>
+           <input autocomplete="off" type="email" id="email" placeholder="hello@lastdoor.store" required> 
+        </div>
+
+        <div class="form__header"> 
+        <label for="textArea"> </label>         
+           <h3 class="form__inputName"> Your Message <span class="form__checkmark">✅</span></h3>
+           <textarea autocomplete="off" class="form__textarea" name="form" id="textArea" placeholder = "Type your message here..." required></textarea>
+        </div>
             <button class="button__regular button__regular--submit" id="form__btn"> Submit Your Message </button>
          
         </form>
         
     </section>
 </footer>
+
+</script>
 </html>

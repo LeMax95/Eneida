@@ -6,8 +6,12 @@
 
     button:hover{
         cursor: pointer;
-        opacity: 95%;
+        opacity: 0.65;
+
+       
     }
+
+
 
 .navigation{
 
@@ -129,6 +133,8 @@ color: #13253A;
     Fill: Solid;
     color: #fff;
     background-color: #FF7F57;
+    opacity: 0.65;
+    transition: opacity 2s;
 }
 
 .services-container{
@@ -537,23 +543,35 @@ letter-spacing: -0.5px;
 color: #FFFFFF;
 }
 .form__header{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
     font-family: 'Sen',sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 18px;
+    opacity: 0.45;
     /* identical to box height */
     
     
     color: #FFFFFF;
+    transition: opacity 2s;
 }
 
 input{
-    margin-bottom: 5px;
     background-color: #11364E;
     outline: none;
-    
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 0.25;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    transition: opacity 2s;
+}
+
+#email{
+    margin-bottom: 30px;
 }
 
 .form__separator{
@@ -561,6 +579,7 @@ border-bottom:  solid #FFFFFF;
 height: 1px;
 opacity: 0.25;
 margin-bottom: 40px;
+transition: opacity 2s;
 }
 
 .form__textarea{
@@ -569,14 +588,63 @@ width: 371px;
 resize: none;
 outline: none;
 
-
+color: #FFFFFF;
 background-color: #11364E;
-}
-
-.form__separator--txtarea{
+border-bottom: 1px solid #FFFFFF;
 margin-bottom: 36px;
+    opacity: 0.45;
+    transition: opacity 2s;
 }
 
+.form__header:focus-within,input:focus,.form__textarea:focus{
+    opacity: 0.85;
+   }
+
+.form__inputName{
+    margin-bottom: 10px;
+    font-family: 'Sen',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    transition: opacity 2s;
+}
+.form__checkmark
+{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.form__header:has(input:valid),.form__header:has(textarea:valid){
+    opacity: 1.0;
+    
+}
+
+.form__header:has(input:valid)>input{
+    opacity: 1.0;
+}
+
+.form__header:has(input:valid)>.form__inputName>.form__checkmark{
+    opacity: 1.0;
+}
+
+.form__header:has(textarea:valid)>textarea{
+    opacity: 1.0;
+}
+
+.form__header:has(textarea:valid)>.form__inputName>.form__checkmark{
+    opacity: 1.0;
+}
+
+.form__header:has(input:valid)+.form__header:has(input:valid)+.form__header:has(textarea:valid) + .button__regular--submit{
+    opacity: 1.0;
+    
+}
 
 
 
