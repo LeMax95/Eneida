@@ -1,0 +1,9 @@
+ <svg viewBox="0 0 250 250">
+      
+    <circle r="120" cx="125" cy="125" fill="yellow" stroke="violet" stroke-width="10px"/>
+   
+    <rect rx="25" ry="25"  x="75" y="75" height="100" width="100"/>
+    <line x1="167" y1="167" x2="206" y2="206" stroke="red" stroke-width="10px"/>
+    </svg>
+
+

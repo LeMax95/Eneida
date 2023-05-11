@@ -1,0 +1,52 @@
+<xml version="1.0" encoding="UTF-8">
+<svg viewBox="0 0 512 512"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+ 
+         <symbol id="credit" viewBox="0 0 512 512">
+         
+          <rect rx="25" ry="25" x="0" y="70" width="512" height="372" fill=" #f0c41b "/>   
+          <rect x="0" y="112" width="512" height="70" fill=" #806f5e "/>      
+          <rect rx="10" ry="10" x="44" y="238" width="100" height="20" fill=" #f9eab0 "/>  
+          <rect rx="10" ry="10" x="163" y="238" width="100" height="20" fill=" #f9eab0 "/>
+          <rect class="rect_1-3" rx="9" ry="9" x="44" y="281" width="24" height="16" fill=" #f9eab0" />
+          <rect class="rect_1-3" rx="9" ry="9" x="139" y="283" width="24" height="16" fill=" #f9eab0" />
+          <rect class="rect_2-4" rx="9" ry="9" x="88" y="281" width="33" height="16" fill=" #f9eab0 "/>
+          <rect class="rect_2-4" rx="9" ry="9" x="188" y="281" width="30" height="16" fill=" #f9eab0 "/>
+          <circle r="8" cx="254" cy="289" fill="#f9eab0" />
+          <circle r="43" cx="352" cy="337" fill="#db2215" />
+          <circle r="43" cx="414" cy="337" fill="#245ea9" />
+          
+    </symbol>
+      </svg>
+
+<svg viewBox="0 0 512 512"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+    <symbol id="sadd" viewBox="0 0 512 512">  
+    <circle r="256" cx="256" cy="256" fill="#fbd971" stroke="none"/>
+    <line x1="87" y1="183" x2="207" y2="183" stroke="#f29c1f" stroke-width="30" stroke-linecap="round"/>  
+    <line x1="304" y1="183" x2="424" y2="183" stroke="#f29c1f" stroke-width="30" stroke-linecap="round"/>
+    <line x1="134" y1="377" x2="377" y2="377" stroke="#f0c419" stroke-width="30" stroke-linecap="round"/>   
+    </symbol>
+    </svg>
+
+<svg viewBox="0 0 512 512"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <symbol id= "pp" viewBox="0 0 512 512"> 
+     <rect rx="35" ry="35" x="60" y="0" width="392" height="512" fill=" #000000 "/>
+     <rect rx="25" ry="25" x="103" y="60" width="300" height="86"  fill="#ffffff"/> 
+     <line x1="165" y1="195" x2="165" y2="318" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>
+     <line x1="103" y1="258" x2="227" y2="258" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>  
+     <line x1="285" y1="258" x2="395" y2="258" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>
+     <line x1="122" y1="451" x2="209" y2="369" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>
+     <line x1="209" y1="451" x2="122" y2="369" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/> 
+     <line x1="299" y1="455" x2="386" y2="372" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>   
+     <circle r="17" cx="310" cy="377" fill="#ffffff" />
+     <circle r="17" cx="382" cy="442" fill="#ffffff" /> 
+    </symbol>
+     </svg>
+
+<svg viewBox="0 0 512 512"  version="1.1" xmlns="http://www.w3.org/2000/svg"> 
+    <symbol id= "kaka" viewBox="0 0 512 512">     
+    <polygon points="115,390 43,202 159,289 255,94 350 292, 470 203, 399 391" fill="#ffffff" stroke-linejoin="round" stroke="#000000" stroke-width="30"/> 
+    <line x1="93" y1="454" x2="418" y2="454" stroke="#000000" stroke-width="30" stroke-linecap="round"/>  
+   </symbol>
+   </svg>    
+  
